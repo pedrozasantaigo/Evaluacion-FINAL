@@ -1,0 +1,263 @@
+body {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    background: #02010a;
+    margin: auto;
+  max-width: 900px;
+       
+}
+
+
+
+header {
+    -webkit-animation: header-animacion 1s 1;
+    animation: header-animacion 1s 1;
+    vertical-align: middle;
+    height: 100px;
+    background: #5b7989;
+    box-shadow: black;
+    -webkit-box-shadow: 0 10px 6px -6px black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: central
+}
+
+header h2{
+    /*margin: 0px 10px;*/
+    text-shadow: 2px 2px 2px  #02010a;
+    float: left;
+    color: white;
+    padding: 0.5% 2% 0 0;
+    /*display: inline;*/
+
+}
+
+header nav {
+    float: right;
+}
+
+nav a:hover,   nav a:active,
+nav .active a:link,  nav .active a:visited {
+    text-decoration: none !important;
+    color: white;
+}
+nav ul {list-style: none; }
+nav li {display: inline; }
+
+a:visited {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    /*text-decoration: none;*/
+    color: white;
+}
+
+a:link{
+    padding: 5px ;
+    /*text-decoration: none;*/
+}
+
+section {
+
+    /*border-radius: 10px;*/ 
+    /*margin: 5px;*/
+    padding: 5px;
+    text-align: center;
+    /*height: 500px;*/
+}
+
+
+#contenedor section img {
+    border: 1px solid black;
+    display: inline;
+    width: 70%;
+    margin: 0px;
+}
+
+/*section img {
+    border: 1px solid black;
+    display: inline;
+    width: 70%;
+    margin: 0px;
+}*/
+
+.sec1{ 
+    background: #82c3a6; 
+
+}
+
+.sec2{
+    /*border: 1px solid black;*/
+    background:  #d5c75f;
+    display: block;
+
+}
+
+footer{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    clear: both;
+    /*width: 98%;*/
+    /*    position: fixed;
+        bottom: 1px;*/
+    height: 15%;
+    background: #C6d5c5;
+    border-radius: 0 0 10px 10px;
+}
+footer div{
+    text-align: center;
+    /*display: inline-block;*/ 
+    margin: 0;
+    width: 25%;
+}
+/*footer p {
+    display: inline;
+    width: 200px;
+}*/
+
+footer div img{
+    height: 70px;
+}
+
+img {
+    box-shadow: 0 10px 6px -6px black;
+    -webkit-box-shadow: 0 10px 6px -6px black;
+}
+
+.img1:hover {
+    
+    transition-duration: 0.5s;
+    transform: rotate(10deg);
+}
+
+
+
+.img2:hover {
+    -webkit-animation: imagen2-animacion 1s infinite; /* Safari 4.0 - 8.0 */
+    animation: imagen2-animacion 1s infinite;
+}
+
+#contenido { 
+
+}
+
+#contenedor {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+@keyframes imagen2-animacion {
+    0% {
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+    }
+    50% {
+        position: relative;
+        left: 10px;
+        bottom: 20px;
+    }
+    100% {
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+    }
+}
+
+@keyframes header-animacion {
+    0% {
+        margin-top: 150%;
+
+
+    }
+    60% {
+        margin-top: -5%;
+    }
+    100% {
+        margin-top: 0%;
+    }
+}
+
+
+
+
+@media  (max-width: 720px){
+
+
+    header { 
+
+
+        text-align: center;
+        height: 130px;
+        background: #5b7989;
+        box-shadow: black;
+        -webkit-box-shadow: 0 10px 6px -6px black;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+    header h2{
+        float: none;
+
+        display: block;
+        text-shadow: 2px 2px 2px  #02010a;
+
+        color: white;
+        padding: 0.5% 2% 0 0;
+        /*display: inline;*/
+
+    }
+
+    header nav {
+        display: block;
+        float: none;
+
+    }
+
+    section img {
+        width: 70%; 
+    }
+
+    #contenedor section img {
+        width: 70%; 
+    }
+
+
+    #contenedor {
+        display: block;
+
+    }
+
+    #contenido {
+
+        max-width: 100%;
+    }
+
+}
+
+
+#imagen1{
+    -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+    filter: blur(10px);
+}
+
+#imagen2 , #imagen4 , #imagen6  {
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+#imagen3 {
+    -webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+    filter: sepia(90%);
+}
+
