@@ -96,6 +96,7 @@ section {
 }
 
 .sec2{
+    width: 33%;
     /*border: 1px solid black;*/
     background:  #d5c75f;
     display: block;
@@ -194,9 +195,23 @@ img {
 }
 
 
+.sec3{
+    width: 50%;
+     background:  #d5c75f;
+    display: block;
+}
+
 
 
 @media  (max-width: 900px){
+    
+    .sec2{
+    width: 100%;
+    }
+    
+    .sec3{
+    width: 100%;
+    }
     
     footer {
         
