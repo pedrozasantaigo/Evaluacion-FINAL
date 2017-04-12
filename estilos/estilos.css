@@ -133,6 +133,7 @@ footer div img{
 img {
     box-shadow: 0 10px 6px -6px black;
     -webkit-box-shadow: 0 10px 6px -6px black;
+    
 }
 
 .img1:hover {
@@ -144,6 +145,7 @@ img {
 
 
 .img2:hover {
+    -moz-animation: imagen2-animacion 1s infinite; 
     -webkit-animation: imagen2-animacion 1s infinite; /* Safari 4.0 - 8.0 */
     animation: imagen2-animacion 1s infinite;
 }
@@ -195,7 +197,16 @@ img {
 
 
 @media  (max-width: 900px){
+    
+    footer {
+        
+        display: block;
+    }
 
+    footer div {
+        margin: 10px auto;
+        width: auto;
+    }
 
     header { 
 
